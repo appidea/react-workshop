@@ -1,17 +1,10 @@
-# Step 1
+# Step 2
 
-Let's get all dependencies from npm to have this step working.
+# Changes
 
-`npm install`
-
-Then, start the developer preview of app.
-
-`npm start`
-
-You should have Your app visible at the following address:
-
-http://localhost:3000
+- added new React component "Fruits Manager" - bound to application
+- added styles for the new component
 
 # Visual effect
 
-[![Local](step1screen.png "Screenshot")](step1screen.png "Screenshot")
+[![Local](step2screen.png "Screenshot")](step2screen.png "Screenshot")

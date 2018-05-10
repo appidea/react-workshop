@@ -1,5 +1,4 @@
 import React from 'react';
-import Fruit from './Fruit';
 import './FruitsManager.css';
 
 class FruitsManager extends React.Component {
@@ -7,7 +6,8 @@ class FruitsManager extends React.Component {
     super(props);
 
     this.state = {
-      fruits: []
+      fruits: [],
+      inputFruitText: ''
     };
   }
 
@@ -19,12 +19,6 @@ class FruitsManager extends React.Component {
       ],
       inputFruitText: ''
     });
-  }
-
-  removeFruit (inputKey) {
-    this.setState({
-      fruits: this.state.fruits.filter((el, key) => key !== inputKey)
-    })
   }
 
   setInputFruitText (text) {
@@ -46,14 +40,6 @@ class FruitsManager extends React.Component {
           <button onClick={() => this.addFruit()}>
             Add
           </button>
-        </div>
-        <div>
-          { this.state.fruits.map((fruit, index) =>
-            <Fruit key={index}
-                   name={fruit}
-                   fruitId={index}
-                   onRemove={(key) => this.removeFruit(key)} />
-          ) }
         </div>
       </div>
     )

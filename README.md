@@ -1,10 +1,11 @@
-# Step 2
+# Step 4
 
 # Changes
 
-- added new React component "Fruits Manager" - bound to application
+- added new component - Fruit
 - added styles for the new component
+- bound Fruit component iteration in context of FruitsManager' state
 
 # Visual effect
 
-[![Local](step2screen.png "Screenshot")](step2screen.png "Screenshot")
+[![Local](step4screen.png "Screenshot")](step4screen.png "Screenshot")
